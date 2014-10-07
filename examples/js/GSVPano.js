@@ -89,7 +89,7 @@ GSVPANO.PanoLoader = function (parameters) {
 		                img.addEventListener('error', function () {
 		                    self.composeFromTile(x, y, new Image());
 		                });
-		                img.crossOrigin = 'http://locality.azurewebsites.net';
+		                img.crossOrigin = 'anonymous';
 		                img.src = url;
 		            })(x, y);
 		        }
